@@ -1,0 +1,16 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detection Result</title>
+</head>
+<body style="background-image: url('static/hospital-theme.jpg'); background-size: cover;">
+    <h2>Detection Result</h2>
+    <p>{{ result }}</p>
+    <img src="{{ url_for('uploaded_file', filename=filename) }}" alt="Uploaded Image" style="max-width: 300px;">
+    <br>
+    <a href="/">Upload Another Image</a>
+</body>
+</html>
